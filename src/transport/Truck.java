@@ -6,7 +6,7 @@ public class Truck extends Transport implements Competitor {
         super("", "", 0);
     }
 
-    public Truck(String brand, String model, double engineVolume) {
+    public Truck(String brand, String model, double engineVolume,LoadCapacity loadCapacity) {
         super(brand, model, engineVolume);
     }
 

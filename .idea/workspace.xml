@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9770a678-1460-4b59-947c-337443e88183" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Polimorfizm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/driver/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/driver/DriverB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/driver/DriverC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/driver/DriverD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Competitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
-    </list>
+    <list default="true" id="9770a678-1460-4b59-947c-337443e88183" name="Changes" comment="Домашнее задание" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +16,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -60,8 +48,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672091187859</updated>
-      <workItem from="1672091189200" duration="3998000" />
+      <workItem from="1672091189200" duration="4291000" />
     </task>
+    <task id="LOCAL-00001" summary="Домашнее задание">
+      <created>1672095326441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672095326441</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Домашнее задание">
+      <created>1672095357653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672095357653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Домашнее задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашнее задание" />
   </component>
 </project>

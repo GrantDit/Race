@@ -6,7 +6,7 @@ public class Bus extends Transport implements Competitor {
         super("", "", 0);
     }
 
-    public Bus(String brand, String model, double engineVolume) {
+    public Bus(String brand, String model, double engineVolume,SeatsCapacity seatsCapacity) {
         super(brand, model, engineVolume);
     }
 
