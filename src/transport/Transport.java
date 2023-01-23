@@ -25,6 +25,17 @@ public abstract class Transport {
         }
     }
 
+    public static void diagnostics(Transport... transports) {
+        for (Transport transport : transports) {
+            try {
+                diagnostics();
+            } catch (UnsupportedOperationException e) {
+                System.out.println("Произошла ошибка");
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
     public String getBrand() {
         return brand;
     }

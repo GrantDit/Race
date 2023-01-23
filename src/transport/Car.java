@@ -1,11 +1,12 @@
 package transport;
+
 public class Car extends Transport implements Competitor {
 
     public Car() {
         super("", "", 0);
     }
 
-    public Car(String brand, String model, double engineVolume,BodyType bodyType) {
+    public Car(String brand, String model, double engineVolume, BodyType bodyType) {
         super(brand, model, engineVolume);
     }
 
@@ -22,6 +23,10 @@ public class Car extends Transport implements Competitor {
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    public void diagnostics() {
+        System.out.println("Машина" + getBrand() + " должна пройти диагностику");
     }
 
     @Override

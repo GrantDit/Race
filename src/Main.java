@@ -52,11 +52,11 @@ public class Main {
 
             System.out.println("------------------------------------------------------------------");
 
-            DriverD<Bus> ilja = new DriverD<>("Антонов Дмитрий Иванович", true, 12);
+            DriverD<Bus> ilja = new DriverD<>("Антонов Дмитрий Иванович", true, 12,"D");
             ilja.drive(bus1);
-            DriverB<Car> andrej = new DriverB<>("Гавриш Кирилл Юрьевич", true, 11);
+            DriverB<Car> andrej = new DriverB<>("Гавриш Кирилл Юрьевич", true, 11,"B");
             andrej.drive(car2);
-            DriverC<Truck> sergej = new DriverC<>("Иванова Ксения Николаевна", true, 10);
+            DriverC<Truck> sergej = new DriverC<>("Иванова Ксения Николаевна", true, 10,"С");
             sergej.drive(truck3);
         }
 }
