@@ -59,5 +59,6 @@ public class Main {
             DriverC<Truck> sergej = new DriverC<>("Иванова Ксения Николаевна", true, 10,"С");
             sergej.drive(truck3);
         }
+
 }
 
