@@ -5,6 +5,9 @@ import transport.Bus;
 import transport.Car;
 import transport.Truck;
 
+
+import java.util.ArrayList;
+
 public class Main {
         public static void main(String[] args) {
 
@@ -60,7 +63,13 @@ public class Main {
             andrej.drive(car2);
             DriverC<Truck> sergej = new DriverC<>("Иванова Ксения Николаевна", true, 10);
             sergej.drive(truck3);
-        }
 
+
+            ArrayList<mechanic> mechanics = new ArrayList<>();
+            mechanic Evgeniy = new mechanic("Евгеинй", "Петров", "СТО",skill.SKILL_OF_WORKING_WITH_CARS);
+            mechanic Dmitriy = new mechanic("Дмитрий", "Иванов", "ПРО-СТО", skill.SKILL_OF_WORKING_WITH_BUSES);
+            mechanic ALex = new mechanic("Алексей", "Антонов", "ПРО-ТРАК", skill.SKILL_OF_WORKING_WITH_TRUCKS);
+            mechanic Ksenya = new mechanic("Ксения", "Иванова", "ТехВорк", skill.SKILL_OF_WORKING_WITH_ALL_TRANSPORT);
+        }
 }
 
