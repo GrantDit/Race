@@ -6,7 +6,7 @@ public class Truck extends Transport implements Competitor {
         super("", "", 0);
     }
 
-    public Truck(String brand, String model, double engineVolume) {
+    public Truck(String brand, String model, double engineVolume, LoadCapacity loadCapacity) {
         super(brand, model, engineVolume);
     }
 
@@ -28,6 +28,10 @@ public class Truck extends Transport implements Competitor {
     @Override
     public void startMoving() {
         System.out.println("Трак начал движение ");
+    }
+
+    public void diagnostics() {
+        System.out.println("Машина" + getBrand() + "должна пройти диагностику");
     }
 
     @Override

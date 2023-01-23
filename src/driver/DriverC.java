@@ -1,16 +1,16 @@
 package driver;
 
-import transport.Transport;
 import transport.Competitor;
+import transport.Transport;
 
 public class DriverC<T extends Transport & Competitor> extends Driver {
 
     public DriverC() {
-        super("", true, 0);
+        super("", true, 0," ");
     }
 
-    public DriverC(String fullName, boolean driversLicence, int drivingExperience) {
-        super(fullName, driversLicence, drivingExperience);
+    public DriverC(String fullName, boolean driversLicence, int drivingExperience, String category) {
+        super(fullName, driversLicence, drivingExperience, category);
     }
 
     @Override

@@ -6,7 +6,7 @@ public class Bus extends Transport implements Competitor {
         super("", "", 0);
     }
 
-    public Bus(String brand, String model, double engineVolume) {
+    public Bus(String brand, String model, double engineVolume, SeatsCapacity seatsCapacity) {
         super(brand, model, engineVolume);
     }
 
@@ -28,6 +28,10 @@ public class Bus extends Transport implements Competitor {
     @Override
     public void startMoving() {
         System.out.println("Автобус начал движение");
+    }
+
+    public void passDiagnostics() {
+        throw new UnsupportedOperationException("Автобус" + getBrand() + ", " + getModel() + " не может пройти диагностику");
     }
 
     @Override
