@@ -27,7 +27,6 @@ public class Main {
             Truck truck1 = new Truck("Волдай", "NEXT", 2.8,LoadCapacity.LOAD_CAPACITY_N1,driver3,mechanics,drivers);
             Truck truck2 = new Truck("КамАЗ", "54901", 12.0,LoadCapacity.LOAD_CAPACITY_N2,driver3,mechanics,drivers);
             Truck truck3 = new Truck("Scania", "S730", 16.0,LoadCapacity.LOAD_CAPACITY_N3,driver3,mechanics,drivers);
-            System.out.println("фпфпфпфпфпфп");
             mechanic1.fixCar(car1);
             driver1.drive(bus1);
             driver2.drive(car2);
