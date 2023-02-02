@@ -1,17 +1,25 @@
 package transport;
 
+import driver.Driver;
+
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class Car extends Transport implements Competitor {
 
-    public Car() {
-        super("", "", 0);
+    public Car(String brand, String model, double engineVolume, BodyType bodyType, Driver driver) {
+        super(brand, model, engineVolume,driver);
     }
-
-    public Car(String brand, String model, double engineVolume, BodyType bodyType) {
-        super(brand, model, engineVolume);
+    public Car(String brand, String model, double engineVolume, BodyType bodyType,Driver driver,ArrayList<Mechanic> mechanics) {
+        super(brand, model, engineVolume,driver,mechanics);
+    }
+    public Car(String brand, String model, double engineVolume,BodyType bodyType,Driver driver, ArrayList<Mechanic> mechanics, ArrayList<Driver> drivers) {
+        super(brand, model, engineVolume,driver,mechanics,drivers);
     }
 
     @Override
     public String toString() {
+
         return super.toString();
     }
 
@@ -23,6 +31,32 @@ public class Car extends Transport implements Competitor {
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    @Override
+    public void informationDriverMechanic() {
+        if (mechanics != null) {
+            for (Mechanic mechanic : mechanics) {
+                if (mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_CARS ||
+                        mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_ALL_TRANSPORT
+                                && mechanics.size() < 4) {
+                    System.out.println("Автомобиль " + getBrand() + " " + getModel() + ", объем двигателя "
+                            + getEngineVolume() + " Л. Обслуживает " + mechanic);
+                }
+            }
+        }else {
+            System.out.println("Нет механников для автомобиля");
+        }
+        if (drivers != null){
+            for (Driver driver : drivers) {
+                if (Objects.equals(driver.getFullName(), getDriver().getFullName())) {
+                    System.out.println("Автобилем " + getBrand() + " " + getModel() + ", объем двигателя "
+                            + getEngineVolume() + " Л. управляет " + driver.getFullName());
+                }
+            }
+        } else {
+            System.out.println("Нет водителей для Автомобиля. ");
+        }
     }
 
     public void diagnostics() {
@@ -40,6 +74,16 @@ public class Car extends Transport implements Competitor {
     }
 
     @Override
+    public void addMechanic(Mechanic mechanic) {
+        if (mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_CARS||
+                mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_ALL_TRANSPORT) {
+            mechanics.add(mechanic);
+        }
+        System.out.println(mechanics);
+    }
+
+
+    @Override
     public void pitStop() {
         System.out.println("Машина должна остановиться ");
     }
@@ -53,5 +97,28 @@ public class Car extends Transport implements Competitor {
     public void getMaximumSpeed() {
         System.out.println("Максимальная скорость : ");
     }
-}
 
+    @Override
+    public void technicalService() {
+        if (mechanics != null) {
+            for (Mechanic mechanic : mechanics) {
+                if (mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_CARS ||
+                        mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_ALL_TRANSPORT) {
+                    mechanic.technicalService(this);
+                }
+            }
+        }
+    }
+
+    @Override
+    public void fixCar() {
+        if (mechanics != null) {
+            for (Mechanic mechanic : mechanics) {
+                if (mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_CARS ||
+                        mechanic.getSkill() == Skill.SKILL_OF_WORKING_WITH_ALL_TRANSPORT) {
+                    mechanic.fixCar(this);
+                }
+            }
+        }
+    }
+}
